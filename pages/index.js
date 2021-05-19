@@ -1,209 +1,162 @@
-import Head from 'next/head'
+import Head from "next/head";
+import Preloader from "../components/preloader";
+import NavBar from "../components/Navbar";
+import Header from "../components/Header";
+import testimonials from "../components/Testimonials/data";
+import Features from "../components/Features/Features";
+import Preview from "../components/Preview";
+import {
+  Details1,
+  Details2,
+  Details1Lightbox,
+  Details2Lightbox,
+} from "../components/AppDetails";
+import Download from "../components/Download";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+import Copyright from "../components/Copyright";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Bongola Chat</title>
+        <link rel="icon" href="/favicon.png" />
+
+        <meta charSet="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <meta
+          name="description"
+          content="Free mobile app HTML landing page template to help you build a great online presence for your app which will convert visitors into users"
+        />
+        <meta name="author" content="Inovatik" />
+
+        <meta property="og:site_name" content="Bongola Chat" />
+        <meta property="og:site" content="https://bongola.chat" />
+        <meta property="og:title" content="Bongola Chat" />
+        <meta
+          property="og:description"
+          content="Application de chat instantanée avec traduction intégrée, groupes et jeux."
+        />
+        <meta property="og:image" content="https://bongola.chat/bchat.jpg" />
+        <meta property="og:url" content="" />
+        <meta property="og:type" content="article" />
+
+        {/* StyleSheets */}
+        <link
+          href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i"
+          rel="stylesheet"
+        />
+        <link href="/css/bootstrap.css" rel="stylesheet" />
+        <link href="/css/fontawesome-all.css" rel="stylesheet" />
+        <link href="/css/swiper.css" rel="stylesheet" />
+        <link href="/css/magnific-popup.css" rel="stylesheet" />
+        <link href="/css/styles.css" rel="stylesheet" />
+
+        {/* Scripts */}
+        <script src="/js/jquery.min.js" defer></script>
+        <script src="/js/popper.min.js" defer></script>
+        <script src="/js/bootstrap.min.js" defer></script>
+        <script src="/js/jquery.easing.min.js" defer></script>
+        <script src="/js/swiper.min.js" defer></script>
+        <script src="/js/jquery.magnific-popup.js" defer></script>
+        <script src="/js/morphext.min.js" defer></script>
+        <script src="/js/validator.min.js" defer></script>
+        <script src="/js/scripts.js" defer></script>
       </Head>
 
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <Preloader />
+      <NavBar />
+      <Header />
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      {/* Testimonials */}
+      <div className="slider-1">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="slider-container">
+                <div className="swiper-container card-slider">
+                  <div className="swiper-wrapper">
+                    {testimonials.map((testimony, index) => (
+                      <div className="swiper-slide" key={index}>
+                        <div className="card">
+                          <img
+                            className="card-image"
+                            src={testimony.image}
+                            alt="alternative"
+                          />
+                          <div className="card-body">
+                            <p className="testimonial-text">{testimony.text}</p>
+                            <p className="testimonial-author">
+                              {testimony.author}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="swiper-button-next"></div>
+                  <div className="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
+      </div>
+      {/* End Testimonials */}
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
+      <Features />
+      <Preview />
 
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
+      <Details1 />
+      <Details2 />
+      <Details1Lightbox />
+      <Details2Lightbox />
+      {/* Screenshots */}
+      <div className="slider-2">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="slider-container">
+                <div className="swiper-container image-slider">
+                  <div className="swiper-wrapper">
+                    {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((index) => (
+                      <div className="swiper-slide" key={index}>
+                        <a
+                          href="images/screenshot-1.png"
+                          className="popup-link"
+                          data-effect="fadeIn"
+                        >
+                          <img
+                            className="img-fluid"
+                            src={"/images/screenshots/" + index + ".png"}
+                            alt="alternative"
+                          />
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="swiper-button-next"></div>
+                  <div className="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* End Screenshots */}
+      <Download />
+      <Contact />
+      <Footer />
+      <Copyright />
     </div>
-  )
+  );
 }
