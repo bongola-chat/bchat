@@ -1,7 +1,7 @@
 export default function NavBar() {
   return (
     <nav className="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-      <a className="navbar-brand logo-image" href="index.html">
+      <a className="navbar-brand logo-image" href="/">
         <img src="/logo_svg.png/" alt="alternative" />
       </a>
 
@@ -22,17 +22,17 @@ export default function NavBar() {
       <div className="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <a className="nav-link page-scroll" href="#header">
+            <a className="nav-link page-scroll" href="/#header">
               ACCUEIL <span className="sr-only">(current)</span>
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link page-scroll" href="#features">
+            <a className="nav-link page-scroll" href="/#features">
               FONCTIONNALITES
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link page-scroll" href="#preview">
+            <a className="nav-link page-scroll" href="/#preview">
               PREVIEW
             </a>
           </li>
@@ -49,13 +49,13 @@ export default function NavBar() {
               DETAILES
             </a>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a className="dropdown-item" href="terms-conditions.html">
+              <a className="dropdown-item" href="/terms">
                 <span className="item-text">
                   TERMES ET CONDITIONS D'UTILISATION
                 </span>
               </a>
               <div className="dropdown-items-divide-hr"></div>
-              <a className="dropdown-item" href="privacy-policy.html">
+              <a className="dropdown-item" href="/policy">
                 <span className="item-text">
                   POLITIQUE SUR LES DONNESS PRIVEES
                 </span>
@@ -64,7 +64,7 @@ export default function NavBar() {
           </li>
           {/* end of dropdown menu */}
           <li className="nav-item">
-            <a className="nav-link page-scroll" href="#contact">
+            <a className="nav-link page-scroll" href="/#contact">
               CONTACT
             </a>
           </li>

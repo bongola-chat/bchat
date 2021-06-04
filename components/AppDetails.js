@@ -12,11 +12,9 @@ export function Details1() {
           </div>
           <div className="col-lg-6">
             <div className="text-container">
-              <h3>Goals Setting</h3>
+              <h3>Made in DRC</h3>
               <p>
-                Leno can easily help you track your personal development
-                evolution if you take the time to properly setup your goals at
-                the beginning of the training process. Check out the details
+                Une application conçues en République Démocratique du Congo. Nous sommmes d'être un des réprésentant de notre pays dans le domaine tech.
               </p>
               <a
                 className="btn-solid-reg popup-with-move-anim"
@@ -120,11 +118,9 @@ export function Details2() {
           <div className="row">
             <div className="col-lg-6">
               <div className="text-container">
-                <h3>Calendar Input</h3>
+                <h3>Simple d'utilisation</h3>
                 <p>
-                  The calendar input function enables the user to setup
-                  training, meditation and relaxation sessions with ease. Just
-                  open the feature and start setting up your time as you desire
+                  Une application belle; simple et efficace. Téléchargez-le sur playstore vivre cette exprérience.
                 </p>
                 <a
                   className="btn-solid-reg popup-with-move-anim"

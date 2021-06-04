@@ -6,17 +6,15 @@ export default function Download() {
           <div className="col-lg-6 col-xl-5">
             <div className="text-container">
               <h2>
-                Download <span className="blue">Leno</span>
+                Téléchargez <span className="blue">Bchat</span>
               </h2>
               <p className="p-large">
-                Target the right customers for your business with the help of
-                Leno's patented technology and increase conversion figures in
-                less than 2 weeks
+                Parler de tout; à tout le monde, partout dans le monde.
               </p>
               {/* <a className="btn-solid-lg" href="#your-link">
                 <i className="fab fa-apple"></i>APP STORE
               </a> */}
-              <a className="btn-solid-lg" href="#your-link">
+              <a className="btn-solid-lg" href="https://play.google.com/store/apps/details?id=chat.bongola.bongola_chat">
                 <i className="fab fa-google-play"></i>PLAY STORE
               </a>
             </div>

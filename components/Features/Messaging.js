@@ -12,42 +12,39 @@ export default function Messaging() {
             <div className="card left-pane first">
               <div className="card-body">
                 <div className="text-wrapper">
-                  <h4 className="card-title">Goal Setting</h4>
+                  <h4 className="card-title">Rapidité</h4>
                   <p>
-                    Like any self improving process, everything starts with
-                    setting your goals and committing to them
+                    Bchat offre une expérience de discussions rapides de le réception à l'envoie des messages.
                   </p>
                 </div>
                 <div className="card-icon">
-                  <i className="far fa-compass"></i>
+                  <i class="far fa fa-tachometer-alt"></i>
                 </div>
               </div>
             </div>
             <div className="card left-pane">
               <div className="card-body">
                 <div className="text-wrapper">
-                  <h4 className="card-title">Visual Editor</h4>
+                  <h4 className="card-title">Appel Audio</h4>
                   <p>
-                    Leno provides a well designed and ergonomic visual editor
-                    for you to edit your notes and input data
+                    Profitez des appels audios gratuits pour appeller dans le monde entier.
                   </p>
                 </div>
                 <div className="card-icon">
-                  <i className="far fa-file-code"></i>
+                  <i className="far fa fa-phone"></i>
                 </div>
               </div>
             </div>
             <div className="card left-pane">
               <div className="card-body">
                 <div className="text-wrapper">
-                  <h4 className="card-title">Refined Options</h4>
+                  <h4 className="card-title">Traduction</h4>
                   <p>
-                    Each option packaged in the app's menus is provided in order
-                    to improve your personal development status
+                    Traduisez les messages qu'on vous envoit et que vous envoyer.
                   </p>
                 </div>
                 <div className="card-icon">
-                  <i className="far fa-gem"></i>
+                  <i className="far fa fa-language"></i>
                 </div>
               </div>
             </div>
@@ -65,13 +62,12 @@ export default function Messaging() {
             <div className="card right-pane first">
               <div className="card-body">
                 <div className="card-icon">
-                  <i className="far fa-calendar-check"></i>
+                  <i className="far fa fa-globe"></i>
                 </div>
                 <div className="text-wrapper">
-                  <h4 className="card-title">Calendar Input</h4>
+                  <h4 className="card-title">Sans limite</h4>
                   <p>
-                    Schedule your appointments, meetings and periodical
-                    evaluations using the provided in-app calendar option
+                    Discutez avec le monde entier sur bchat sans restrictions, ne vous limitez pas qu'à vos contacts.
                   </p>
                 </div>
               </div>
@@ -79,13 +75,12 @@ export default function Messaging() {
             <div className="card right-pane">
               <div className="card-body">
                 <div className="card-icon">
-                  <i className="far fa-bookmark"></i>
+                  <i className="far fa fa-hand-holding"></i>
                 </div>
                 <div className="text-wrapper">
-                  <h4 className="card-title">Easy Reading</h4>
+                  <h4 className="card-title">Fiabilité</h4>
                   <p>
-                    Reading focus mode for long form articles, ebooks and other
-                    materials which involve large text areas
+                  Pas de crash serveur, l'application fonctionne 24h/24.
                   </p>
                 </div>
               </div>
@@ -93,13 +88,12 @@ export default function Messaging() {
             <div className="card right-pane">
               <div className="card-body">
                 <div className="card-icon">
-                  <i className="fas fa-cube"></i>
+                  <i className="fas fa fa-cloud"></i>
                 </div>
                 <div className="text-wrapper">
-                  <h4 className="card-title">Good Foundation</h4>
+                  <h4 className="card-title">Basé sur cloud</h4>
                   <p>
-                    Get a solid foundation for your self development efforts.
-                    Try Leno mobile app for any mobile platform
+                    Vous pouvez changer de téléphone comme vous voulez, vos données seront toujours là. 
                   </p>
                 </div>
               </div>

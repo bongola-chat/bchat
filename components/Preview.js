@@ -6,8 +6,7 @@ export default function Preview() {
           <div className="col-lg-12">
             <h2>PREVIEW</h2>
             <div className="p-heading p-large">
-              Target the right customers for your business with the help of
-              Leno's patented segmentation technology
+              Ayez une idée sur l'application.
             </div>
           </div>
         </div>

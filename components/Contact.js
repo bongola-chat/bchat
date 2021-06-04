@@ -7,23 +7,22 @@ export default function Contact() {
             <h2>CONTACT</h2>
             <ul className="list-unstyled li-space-lg">
               <li className="address">
-                Don't hesitate to give us a call or just use the contact form
-                below
+                N'hésitez pas à nous contactez ou veuillez juste remplir le formulaire ci-dessous.
               </li>
-              <li>
+              {/* <li>
                 <i className="fas fa-map-marker-alt"></i>22 Innovative, San
                 Francisco, CA 94043, US
-              </li>
+              </li> */}
               <li>
                 <i className="fas fa-phone"></i>
-                <a className="blue" href="tel:003024630820">
-                  +81 720 2212
+                <a className="blue" href="tel:+243974820117">
+                  +243 974 820 117
                 </a>
               </li>
               <li>
                 <i className="fas fa-envelope"></i>
-                <a className="blue" href="mailto:office@leno.com">
-                  office@leno.com
+                <a className="blue" href="mailto:bchatech@gmail.com">
+                bchatech@gmail.com
                 </a>
               </li>
             </ul>
@@ -39,8 +38,8 @@ export default function Contact() {
                   id="cname"
                   required
                 />
-                <label className="label-control" for="cname">
-                  Name
+                <label className="label-control" htmlFor="cname">
+                  Nom
                 </label>
                 <div className="help-block with-errors"></div>
               </div>
@@ -51,7 +50,7 @@ export default function Contact() {
                   id="cemail"
                   required
                 />
-                <label className="label-control" for="cemail">
+                <label className="label-control" htmlFor="cemail">
                   Email
                 </label>
                 <div className="help-block with-errors"></div>
@@ -62,26 +61,14 @@ export default function Contact() {
                   id="cmessage"
                   required
                 ></textarea>
-                <label className="label-control" for="cmessage">
-                  Your message
+                <label className="label-control" htmlFor="cmessage">
+                  Votre message
                 </label>
-                <div className="help-block with-errors"></div>
-              </div>
-              <div className="form-group checkbox">
-                <input
-                  type="checkbox"
-                  id="cterms"
-                  value="Agreed-to-Terms"
-                  required
-                />
-                I have read and agree to Leno's stated conditions in{" "}
-                <a href="privacy-policy.html">Privacy Policy</a> and{" "}
-                <a href="terms-conditions.html">Terms Conditions</a>
                 <div className="help-block with-errors"></div>
               </div>
               <div className="form-group">
                 <button type="submit" className="form-control-submit-button">
-                  SUBMIT MESSAGE
+                  ENVOYER LE MESSAGE
                 </button>
               </div>
               <div className="form-message">

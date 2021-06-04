@@ -1,10 +1,10 @@
 export default function Copyright() {
   return (
-    <div class="copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <p class="p-small">
+    <div className="copyright">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
+            <p className="p-small">
               Copyright © Leno - Mobile App Landing Page Template by
               <a href="http://www.inovatik.com">Inovatik</a>
             </p>

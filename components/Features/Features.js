@@ -28,7 +28,7 @@ export default function Features() {
                 aria-controls="tab-1"
                 aria-selected="true"
               >
-                <i className="fas fa-cog"></i>Messaging
+                <i className="fas fa fa-comments"></i>Messaging
               </a>
             </li>
             <li className="nav-item">
@@ -41,7 +41,7 @@ export default function Features() {
                 aria-controls="tab-2"
                 aria-selected="false"
               >
-                <i className="fas fa-binoculars"></i>Jeux
+                <i className="fas fa fa-gamepad"></i>Jeux
               </a>
             </li>
             <li className="nav-item">
@@ -54,7 +54,7 @@ export default function Features() {
                 aria-controls="tab-3"
                 aria-selected="false"
               >
-                <i className="fas fa-search"></i>IA
+                <i className="fas fa fa-robot"></i>IA
               </a>
             </li>
           </ul>

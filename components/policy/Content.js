@@ -241,7 +241,7 @@ export default function Header() {
                         id="pname"
                         required
                       />
-                      <label className="label-control" for="pname">
+                      <label className="label-control" htmlFor="pname">
                         Name
                       </label>
                       <div className="help-block with-errors"></div>
@@ -253,7 +253,7 @@ export default function Header() {
                         id="pemail"
                         required
                       />
-                      <label className="label-control" for="pemail">
+                      <label className="label-control" htmlFor="pemail">
                         Email
                       </label>
                       <div className="help-block with-errors"></div>

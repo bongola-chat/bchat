@@ -7,21 +7,19 @@ export default function Header() {
             <div className="col-lg-6">
               <div className="text-container">
                 <h1>
-                  PARLER <br />
-                  FOR
+                  PARLER <br />{" "}
                   <span id="js-rotating">
                     DE TOUT, A TOUT LE MONDE, PARTOUT DANS LE MONDE
                   </span>
                 </h1>
                 <p className="p-large">
-                  Leno is one of the easiest and feature packed marketing
-                  automation apps in the market. Download it today!
+                L'application qui vous permez de discuter dans 20 langues du monde. Téléchargez maintenant!
                 </p>
                 {/* Available on AppStore */}
                 {/* <a className="btn-solid-lg page-scroll" href="#your-link">
                   <i className="fab fa-apple"></i>APP STORE
                 </a> */}
-                <a className="btn-solid-lg page-scroll" href="#your-link">
+                <a className="btn-solid-lg page-scroll" href="https://play.google.com/store/apps/details?id=chat.bongola.bongola_chat">
                   <i className="fab fa-google-play"></i>PLAY STORE
                 </a>
               </div>
