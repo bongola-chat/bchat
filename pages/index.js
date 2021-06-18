@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Preloader from "../components/preloader";
+import Preloader from "../components/Preloader";
 import NavBar from "../components/Navbar";
 import Header from "../components/Header";
 import testimonials from "../components/Testimonials/data";
