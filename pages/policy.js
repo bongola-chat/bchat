@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Preloader from "../components/Preloader";
-import NavBar from "../components/NavBar";
+import NavBar from "../components/Navbar";
 import Header from "../components/policy/Header";
 import Breadcrumbs from "../components/policy/Breadcrumbs";
 import Content from "../components/policy/Content";
