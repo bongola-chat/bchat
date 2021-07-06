@@ -31,7 +31,7 @@ export default function Home() {
 
         <meta
           name="description"
-          content="Free mobile app HTML landing page template to help you build a great online presence for your app which will convert visitors into users"
+          content="Application de chat instantanée avec traduction intégrée, appels, groupes et jeux."
         />
         <meta name="author" content="Inovatik" />
 
@@ -78,7 +78,7 @@ export default function Home() {
       <Header />
 
       {/* Testimonials */}
-      <div className="slider-1">
+      {/* <div className="slider-1">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -110,16 +110,16 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* End Testimonials */}
 
       <Features />
       <Preview />
 
-      <Details1 />
+      {/* <Details1 />
       <Details2 />
       <Details1Lightbox />
-      <Details2Lightbox />
+      <Details2Lightbox /> */}
       {/* Screenshots */}
       <div className="slider-2">
         <div className="container">

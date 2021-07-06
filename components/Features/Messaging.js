@@ -18,7 +18,7 @@ export default function Messaging() {
                   </p>
                 </div>
                 <div className="card-icon">
-                  <i class="far fa fa-tachometer-alt"></i>
+                  <i className="far fa fa-tachometer-alt"></i>
                 </div>
               </div>
             </div>

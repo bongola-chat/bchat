@@ -16,7 +16,7 @@ export default function Preview() {
               <div className="video-wrapper">
                 <a
                   className="popup-youtube"
-                  href="https://www.youtube.com/watch?v=fLCjQJCekTs"
+                  href="https://www.youtube.com/watch?v=g-UPjWh-P_Y"
                   data-effect="fadeIn"
                 >
                   <img
